@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin/dashboard
+Disallow: /admin/students
+Disallow: /admin/courses
+Disallow: /admin/admissions
+Disallow: /admin/messages
+Disallow: /admin/gallery
+Disallow: /admin/admins
+
+Sitemap: https://midt.edu.pk/sitemap.xml
