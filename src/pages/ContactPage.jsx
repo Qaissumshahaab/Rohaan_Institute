@@ -4,7 +4,7 @@ import { toast } from 'react-hot-toast';
 import AnimatedSection from '../components/common/AnimatedSection';
 import { contactAPI } from '../services/api';
 
-const WHATSAPP = '923001234567';
+const WHATSAPP = '923057777009';
 
 const contactInfo = [
   { icon: '📍', label: 'Address', value: 'Main Hussain Agahi, Near Ghanta Ghar, Multan, Punjab, Pakistan', href: null },
@@ -20,6 +20,20 @@ const socialLinks = [
   { icon: '▶️', name: 'YouTube', href: 'https://youtube.com', color: 'hover:bg-red-600' },
   { icon: '💬', name: 'WhatsApp', href: `https://wa.me/${WHATSAPP}`, color: 'hover:bg-green-500' },
 ];
+
+const Field = ({ label, name, type = 'text', placeholder, required, rows, form, errors, onChange }) => (
+  <div>
+    <label className="block text-sm font-semibold text-gray-700 mb-1.5">{label} {required && <span className="text-orange-500">*</span>}</label>
+    {rows ? (
+      <textarea name={name} value={form[name]} onChange={onChange} rows={rows} placeholder={placeholder}
+        className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 resize-none transition-all ${errors[name] ? 'border-red-400 focus:ring-red-100' : 'border-gray-200 focus:border-blue-400 focus:ring-blue-100'}`} />
+    ) : (
+      <input type={type} name={name} value={form[name]} onChange={onChange} placeholder={placeholder}
+        className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 transition-all ${errors[name] ? 'border-red-400 focus:ring-red-100' : 'border-gray-200 focus:border-blue-400 focus:ring-blue-100'}`} />
+    )}
+    {errors[name] && <p className="text-red-500 text-xs mt-1.5">{errors[name]}</p>}
+  </div>
+);
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
@@ -59,20 +73,6 @@ export default function ContactPage() {
     }
   };
 
-  const Field = ({ label, name, type = 'text', placeholder, required, rows }) => (
-    <div>
-      <label className="block text-sm font-semibold text-gray-700 mb-1.5">{label} {required && <span className="text-orange-500">*</span>}</label>
-      {rows ? (
-        <textarea name={name} value={form[name]} onChange={handleChange} rows={rows} placeholder={placeholder}
-          className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 resize-none transition-all ${errors[name] ? 'border-red-400 focus:ring-red-100' : 'border-gray-200 focus:border-blue-400 focus:ring-blue-100'}`} />
-      ) : (
-        <input type={type} name={name} value={form[name]} onChange={handleChange} placeholder={placeholder}
-          className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 transition-all ${errors[name] ? 'border-red-400 focus:ring-red-100' : 'border-gray-200 focus:border-blue-400 focus:ring-blue-100'}`} />
-      )}
-      {errors[name] && <p className="text-red-500 text-xs mt-1.5">{errors[name]}</p>}
-    </div>
-  );
-
   return (
     <>
       <Helmet>
@@ -111,11 +111,11 @@ export default function ContactPage() {
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-5">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                        <Field label="Your Name" name="name" placeholder="Muhammad Ali" required />
-                        <Field label="Email Address" name="email" type="email" placeholder="you@gmail.com" required />
+                        <Field label="Your Name" name="name" placeholder="Muhammad Ali" required form={form} errors={errors} onChange={handleChange} />
+                        <Field label="Email Address" name="email" type="email" placeholder="you@gmail.com" required form={form} errors={errors} onChange={handleChange} />
                       </div>
-                      <Field label="Subject" name="subject" placeholder="What is this about?" required />
-                      <Field label="Message" name="message" placeholder="Write your message here..." required rows={5} />
+                      <Field label="Subject" name="subject" placeholder="What is this about?" required form={form} errors={errors} onChange={handleChange} />
+                      <Field label="Message" name="message" placeholder="Write your message here..." required rows={5} form={form} errors={errors} onChange={handleChange} />
                       <button type="submit" disabled={loading}
                         className="btn-primary w-full justify-center py-4 text-base disabled:opacity-60 disabled:cursor-not-allowed">
                         {loading ? (
@@ -196,7 +196,7 @@ export default function ContactPage() {
                   className="ml-auto btn-outline text-xs px-3 py-1.5">Open in Maps</a>
               </div>
               <iframe
-                title="MIDT Location"
+                title="RICS Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.7!2d71.4755!3d30.1575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33db57ae2a23%3A0x16e9b8d8bf862cce!2sGhanta%20Ghar%20Multan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
                 width="100%"
                 height="350"

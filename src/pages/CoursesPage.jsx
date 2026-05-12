@@ -16,6 +16,10 @@ const CATEGORIES = [
   'Video Editing',
   'UI/UX Design',
   'E-Commerce',
+  'Ai Automation',
+  'Spoken English',
+  'Youtube Automation',
+  'Word Press Development',
 ];
 
 const LEVELS = ['All', 'Beginner', 'Intermediate', 'Advanced'];
@@ -70,8 +74,8 @@ export default function CoursesPage() {
   return (
     <>
       <Helmet>
-        <title>All Courses | MIDT — Multan Institute of Digital Technology</title>
-        <meta name="description" content="Browse all professional IT courses at MIDT Multan. Web Dev, Graphic Design, Digital Marketing, Python, Freelancing, and more. Enroll today." />
+        <title>All Courses | RICS — Multan Institute of Digital Technology</title>
+        <meta name="description" content="Browse all professional IT courses at RICS Multan. Web Dev, Graphic Design, Digital Marketing, Python, Freelancing, and more. Enroll today." />
       </Helmet>
 
       {/* Page Header */}

@@ -123,7 +123,7 @@ export function CTASection() {
           </h2>
 
           <p className="text-blue-200 text-xl mb-10 max-w-2xl mx-auto">
-            Join thousands of students who already transformed their lives with MIDT. Your dream career starts with a single step.
+            Join thousands of students who already transformed their lives with RICS. Your dream career starts with a single step.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
@@ -131,7 +131,7 @@ export function CTASection() {
               Enroll Now — It's Time! 🎓
             </Link>
             <a
-              href="https://wa.me/923001234567?text=I want to know more about MIDT courses"
+              href="https://wa.me/923057777009?text=I want to know more about RICs courses"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold rounded-xl transition-all duration-300"

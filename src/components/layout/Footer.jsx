@@ -72,10 +72,10 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-white font-bold text-sm leading-tight" style={{ fontFamily: 'Syne, sans-serif' }}>
-                  Multan Institute of
+                  Rohaan Institute of
                 </div>
                 <div className="text-blue-400 font-bold text-sm leading-tight" style={{ fontFamily: 'Syne, sans-serif' }}>
-                  Digital Technology
+                  Computer Studies
                 </div>
               </div>
             </div>
@@ -140,29 +140,29 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex gap-3 text-sm">
                 <span className="text-blue-400 mt-0.5">📍</span>
-                <span className="text-gray-400">Main Hussain Agahi, Near Ghanta Ghar, Multan, Punjab, Pakistan</span>
+                <span className="text-gray-400">Chungi No.6, Bata Chowk, Fabbies Pizza Near Dilshad Medical Store, Multan.</span>
               </li>
               <li className="flex gap-3 text-sm">
                 <span className="text-blue-400">📞</span>
-                <a href="tel:+923001234567" className="text-gray-400 hover:text-white transition-colors">
-                  +92 300 123 4567
+                <a href="tel:+923057777009" className="text-gray-400 hover:text-white transition-colors">
+                  +92 305 777 7009        
                 </a>
               </li>
               <li className="flex gap-3 text-sm">
                 <span className="text-blue-400">💬</span>
-                <a href="https://wa.me/923001234567" className="text-gray-400 hover:text-white transition-colors">
-                  +92 300 123 4567 (WhatsApp)
+                <a href="https://wa.me/923057777009" className="text-gray-400 hover:text-white transition-colors">
+                  +92 305 777 7009 (WhatsApp)
                 </a>
               </li>
               <li className="flex gap-3 text-sm">
                 <span className="text-blue-400">✉️</span>
-                <a href="mailto:info@midt.edu.pk" className="text-gray-400 hover:text-white transition-colors">
-                  info@midt.edu.pk
+                <a href="mailto:info@rics.edu.pk" className="text-gray-400 hover:text-white transition-colors">
+                  info@rics.edu.pk
                 </a>
               </li>
               <li className="flex gap-3 text-sm">
                 <span className="text-blue-400">🕐</span>
-                <span className="text-gray-400">Mon-Sat: 9:00 AM – 7:00 PM</span>
+                <span className="text-gray-400">Mon-Sun: 9:00 AM – 8:00 PM</span>
               </li>
             </ul>
           </div>
@@ -172,7 +172,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Multan Institute of Digital Technology. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Rohaan Institute of Computer Studies. All rights reserved.</p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-blue-400 transition-colors">Terms of Use</Link>

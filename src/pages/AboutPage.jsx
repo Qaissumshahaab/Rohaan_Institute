@@ -4,16 +4,17 @@ import { motion } from 'framer-motion';
 import AnimatedSection from '../components/common/AnimatedSection';
 
 const team = [
-  { name: 'Mr. Tariq Mehmood', role: 'Director & Founder', emoji: '👨‍💼', bio: 'Visionary educator with 15+ years of experience in IT training and education management.' },
-  { name: 'Sir Ahmed Raza', role: 'Head of Web Development', emoji: '👨‍💻', bio: 'Full-stack developer with 8+ years of industry experience and international project portfolio.' },
-  { name: 'Miss Sana Malik', role: 'Graphic Design Instructor', emoji: '👩‍🎨', bio: 'Award-winning designer with expertise in branding, UI/UX, and digital illustration.' },
-  { name: 'Sir Usman Khan', role: 'Digital Marketing Expert', emoji: '📊', bio: 'Certified Google & Meta ads specialist who has managed campaigns worth millions.' },
-  { name: 'Sir Bilal Ahmed', role: 'Freelancing Mentor', emoji: '🌐', bio: 'Top-rated Fiverr seller and Upwork pro with $50,000+ earned online. Mentors 500+ freelancers.' },
-  { name: 'Sir Fahad Mehmood', role: 'Python & Data Instructor', emoji: '🐍', bio: 'Software engineer specializing in Python automation, data analysis, and machine learning basics.' },
+  { name: 'Mr. Muhammad Ismaeel', role: 'Director & Founder', emoji: '👨‍💼', bio: 'Visionary educator with 15+ years of experience in IT training and education management.' },
+  { name: 'Muhammad Adnan', role: 'Word Press Developer', emoji: '👨‍💻', bio: 'Full-stack developer with  industry experience and international project portfolio.' },
+  { name: 'Muhammad Amaan', role: 'Graphic Design and video Editing Instructor', emoji: '👩‍🎨', bio: 'Designer with expertise in branding, UI/UX, and digital illustration.' },
+  { name: 'Muhammad Adnan', role: 'Digital Marketing Expert', emoji: '📊', bio: 'Certified Google & Meta ads specialist who has managed campaigns worth millions.' },
+  { name: 'Mr. Muhammad Ismaeel', role: 'Freelancing Mentor and MS Office Trainer', emoji: '🌐', bio: 'Top-rated Fiverr seller and Upwork pro with $50,000+ earned online. Mentors 500+ freelancers.' },
+  { name: 'Muhammad Amaan', role: 'AI Automation and YouTube Automation', emoji: '🐍', bio: 'Specializing in AI-driven automation and YouTube content creation strategies.' },
+  { name: 'Israr Khokhar', role: 'Spoken English Instructor', emoji: '💻', bio: 'Experienced English teacher with a passion for helping students improve their communication skills.' },
 ];
 
 const timeline = [
-  { year: '2018', event: 'MIDT Founded', desc: 'Established with a vision to bring quality IT education to Multan.' },
+  { year: '2018', event: 'RICS Founded', desc: 'Established with a vision to bring quality IT education to Multan.' },
   { year: '2019', event: '500 Students Milestone', desc: 'Enrolled our 500th student and expanded our course offerings.' },
   { year: '2020', event: 'Online Classes Launched', desc: 'Pivoted to hybrid learning during COVID-19, serving students remotely.' },
   { year: '2021', event: 'New Campus Opened', desc: 'Inaugurated our second campus with state-of-the-art computer labs.' },
@@ -33,8 +34,8 @@ export default function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>About MIDT | Multan Institute of Digital Technology</title>
-        <meta name="description" content="Learn about MIDT's story, mission, vision, and the expert team behind Multan's leading IT institute." />
+        <title>About RICS | Rohaan Institute of Computer Studies</title>
+        <meta name="description" content="Learn about RICS's story, mission, vision, and the expert team behind Multan's leading IT institute." />
       </Helmet>
 
       {/* Page Header */}
@@ -44,7 +45,7 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Syne, sans-serif' }}>
-              About MIDT
+              About RICS
             </h1>
             <p className="text-blue-200 text-lg max-w-2xl mx-auto">
               Multan's most trusted IT institute — shaping the digital future of Pakistan's youth since 2018.
@@ -61,9 +62,9 @@ export default function AboutPage() {
               <div className="section-label">Our Story</div>
               <h2 className="section-title">Who We Are</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>Multan Institute of Digital Technology (MIDT) was founded in 2018 with a clear mission: to bridge the digital skills gap in South Punjab and provide world-class IT education at affordable prices.</p>
-                <p>Starting with just 3 courses and a small team of passionate educators, MIDT has grown into Multan's most comprehensive tech training center — with 20+ programs, 12 expert instructors, and 5000+ successful graduates.</p>
-                <p>We believe that every student, regardless of their background, deserves access to the skills that can unlock a prosperous digital career. Whether it's getting a corporate job, freelancing globally, or starting a business — MIDT prepares you for all of it.</p>
+                <p>Rohaan Institute of Computer Studies (RICS) was founded in 2018 with a clear mission: to bridge the digital skills gap in South Punjab and provide world-class IT education at affordable prices.</p>
+                <p>Starting with just 3 courses and a small team of passionate educators, RICS has grown into Multan's most comprehensive tech training center — with 20+ programs, 12 expert instructors, and 5000+ successful graduates.</p>
+                <p>We believe that every student, regardless of their background, deserves access to the skills that can unlock a prosperous digital career. Whether it's getting a corporate job, freelancing globally, or starting a business — RICS prepares you for all of it.</p>
               </div>
               <div className="grid grid-cols-3 gap-4 mt-8">
                 {[['5000+', 'Graduates'], ['20+', 'Courses'], ['95%', 'Placement']].map(([v, l]) => (
@@ -84,11 +85,11 @@ export default function AboutPage() {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">👨‍💼</div>
                     <div>
                       <h3 className="font-bold text-gray-900" style={{ fontFamily: 'Syne, sans-serif' }}>Director's Message</h3>
-                      <p className="text-sm text-blue-600 font-medium">Mr. Tariq Mehmood — Founder & Director</p>
+                      <p className="text-sm text-blue-600 font-medium">Mr. Muhammad Ismaeel — Founder & Director</p>
                     </div>
                   </div>
                   <blockquote className="text-gray-600 text-sm leading-relaxed italic border-l-4 border-blue-300 pl-4">
-                    "At MIDT, we don't just teach technology — we build futures. Our commitment is to every student who walks through our doors: we will equip you with the skills, confidence, and network to thrive in the digital economy. Pakistan's youth is its greatest asset, and we are here to unlock that potential."
+                    "At RICS, we don't just teach technology — we build futures. Our commitment is to every student who walks through our doors: we will equip you with the skills, confidence, and network to thrive in the digital economy. Pakistan's youth is its greatest asset, and we are here to unlock that potential."
                   </blockquote>
                 </div>
               </div>
@@ -143,7 +144,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-14">
             <div className="section-label">Our Journey</div>
-            <h2 className="section-title">MIDT <span className="gradient-text">Timeline</span></h2>
+            <h2 className="section-title">RICS <span className="gradient-text">Timeline</span></h2>
           </AnimatedSection>
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 to-orange-200 -translate-x-1/2 hidden md:block" />

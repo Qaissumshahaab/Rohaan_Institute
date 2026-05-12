@@ -45,15 +45,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-sm font-mono">MI</span>
-            </div>
+            <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md">
+             <img src="/imageRohhan.jpg" alt="MIDT logo" className="w-full h-full object-cover" />
+           </div>
             <div className="hidden sm:block">
               <div className="font-bold text-gray-900 text-sm leading-tight" style={{ fontFamily: 'Syne, sans-serif' }}>
-                Multan Institute of
+                Rohaan Institute of
               </div>
               <div className="text-blue-600 font-bold text-sm leading-tight" style={{ fontFamily: 'Syne, sans-serif' }}>
-                Digital Technology
+                Computer Studies
               </div>
             </div>
           </Link>

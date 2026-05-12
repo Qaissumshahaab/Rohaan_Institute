@@ -5,7 +5,7 @@ import { toast } from 'react-hot-toast';
 import AnimatedSection from '../components/common/AnimatedSection';
 import { admissionsAPI, coursesAPI } from '../services/api';
 
-const WHATSAPP = '923001234567';
+const WHATSAPP = '923057777009';
 const TIMINGS = ['Morning (9:00 AM – 12:00 PM)', 'Afternoon (1:00 PM – 4:00 PM)', 'Evening (5:00 PM – 8:00 PM)', 'Weekend (Sat & Sun)'];
 
 const steps = [
@@ -15,6 +15,17 @@ const steps = [
   { step: '04', icon: '💰', title: 'Fee Submission', desc: 'Submit the fee (or first installment) and officially secure your seat.' },
   { step: '05', icon: '🚀', title: 'Start Learning', desc: 'Join your class and begin your journey to a successful digital career!' },
 ];
+
+const InputField = ({ label, name, type = 'text', placeholder, required, form, errors, onChange }) => (
+  <div>
+    <label className="block text-sm font-semibold text-gray-700 mb-1.5">{label} {required && <span className="text-orange-500">*</span>}</label>
+    <input
+      type={type} name={name} value={form[name]} onChange={onChange} placeholder={placeholder} required={required}
+      className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 transition-all ${errors[name] ? 'border-red-400 focus:ring-red-100' : 'border-gray-200 focus:border-blue-400 focus:ring-blue-100'}`}
+    />
+    {errors[name] && <p className="text-red-500 text-xs mt-1.5">{errors[name]}</p>}
+  </div>
+);
 
 const intakeDates = [
   { month: 'January 2025', status: 'Full', batch: '2025-A' },
@@ -83,17 +94,6 @@ export default function AdmissionPage() {
     }
   };
 
-  const InputField = ({ label, name, type = 'text', placeholder, required }) => (
-    <div>
-      <label className="block text-sm font-semibold text-gray-700 mb-1.5">{label} {required && <span className="text-orange-500">*</span>}</label>
-      <input
-        type={type} name={name} value={form[name]} onChange={handleChange} placeholder={placeholder} required={required}
-        className={`w-full px-4 py-3 border rounded-xl text-sm focus:outline-none focus:ring-2 transition-all ${errors[name] ? 'border-red-400 focus:ring-red-100' : 'border-gray-200 focus:border-blue-400 focus:ring-blue-100'}`}
-      />
-      {errors[name] && <p className="text-red-500 text-xs mt-1.5">{errors[name]}</p>}
-    </div>
-  );
-
   return (
     <>
       <Helmet>
@@ -135,9 +135,9 @@ export default function AdmissionPage() {
                     </motion.div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-5">
-                      <InputField label="Full Name" name="fullName" placeholder="e.g. Muhammad Ali" required />
-                      <InputField label="WhatsApp Number" name="whatsapp" type="tel" placeholder="e.g. 03001234567" required />
-                      <InputField label="Email Address" name="email" type="email" placeholder="e.g. you@gmail.com" />
+                      <InputField label="Full Name" name="fullName" placeholder="e.g. Muhammad Ali" required form={form} errors={errors} onChange={handleChange} />
+                      <InputField label="WhatsApp Number" name="whatsapp" type="tel" placeholder="e.g. 03001234567" required form={form} errors={errors} onChange={handleChange} />
+                      <InputField label="Email Address" name="email" type="email" placeholder="e.g. you@gmail.com" form={form} errors={errors} onChange={handleChange} />
 
                       {/* Course dropdown */}
                       <div>

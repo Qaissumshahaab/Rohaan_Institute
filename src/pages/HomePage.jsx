@@ -80,10 +80,10 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Multan Institute of Digital Technology | Best Computer Institute in Multan</title>
-        <meta name="description" content="MIDT offers professional IT courses in Multan. Web Development, Graphic Design, Digital Marketing, Python, Freelancing & more. Government-recognized certificates." />
-        <meta property="og:title" content="Multan Institute of Digital Technology" />
-        <meta property="og:description" content="Start your tech career at MIDT — Multan's leading computer institute." />
+        <title>Rohaan Institute of Computer Studies | Best Computer Institute in Multan</title>
+        <meta name="description" content="RICS offers professional IT courses in Multan. Web Development, Graphic Design, Digital Marketing, Python, Freelancing & more. Government-recognized certificates." />
+        <meta property="og:title" content="Rohaan Institute of Computer Studies" />
+        <meta property="og:description" content="Start your tech career at RICS — Multan's leading computer institute." />
         <meta property="og:type" content="website" />
       </Helmet>
 
@@ -140,7 +140,7 @@ export default function HomePage() {
                   Go to Admission →
                 </Link>
                 <a
-                  href="https://wa.me/923001234567?text=I want to enroll at MIDT"
+                  href="https://wa.me/923057777009?text=I want to enroll at RICS"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold rounded-xl transition-colors"

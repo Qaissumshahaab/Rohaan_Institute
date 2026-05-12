@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { coursesAPI } from '../services/api';
 import AnimatedSection from '../components/common/AnimatedSection';
 
-const WHATSAPP = '923001234567';
+const WHATSAPP = '923057777009';
 
 function FAQItem({ faq }) {
   const [open, setOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function CourseDetailPage() {
   }, [slug]);
 
   const whatsappMsg = course
-    ? encodeURIComponent(`Hi! I want to apply for the *${course.title}* course at MIDT. Please guide me.`)
+    ? encodeURIComponent(`Hi! I want to apply for the *${course.title}* course at RICS. Please guide me.`)
     : '';
 
   if (loading) return (
@@ -76,7 +76,7 @@ export default function CourseDetailPage() {
   return (
     <>
       <Helmet>
-        <title>{course.title} | MIDT Multan</title>
+        <title>{course.title} | RICS Multan</title>
         <meta name="description" content={course.description?.slice(0, 155)} />
       </Helmet>
 

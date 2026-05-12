@@ -8,7 +8,7 @@ const testimonials = [
     course: 'Web Development',
     location: 'Multan',
     rating: 5,
-    text: 'MIDT completely changed my life! I was unemployed for 2 years, enrolled in the Web Development course, and within 3 months of completing it, I landed a job at a tech company in Lahore earning Rs. 50,000/month.',
+    text: 'RICS completely changed my life! I was unemployed for 2 years, enrolled in the Web Development course, and within 3 months of completing it, I landed a job at a tech company in Lahore earning Rs. 50,000/month.',
     avatar: '👨‍💻',
     achievement: 'Now working at TechCorp Lahore',
   },
@@ -17,7 +17,7 @@ const testimonials = [
     course: 'Graphic Designing',
     location: 'Multan',
     rating: 5,
-    text: 'The graphic design course at MIDT is top-notch. Miss Sana is an amazing instructor who gives real-world projects. I now run my own design studio and earn through Fiverr from home.',
+    text: 'The graphic design course at RICS is top-notch. Miss Sana is an amazing instructor who gives real-world projects. I now run my own design studio and earn through Fiverr from home.',
     avatar: '👩‍🎨',
     achievement: 'Fiverr Level 2 Seller — $2000/month',
   },
@@ -35,7 +35,7 @@ const testimonials = [
     course: 'Freelancing',
     location: 'Multan',
     rating: 5,
-    text: 'Sir Bilal\'s freelancing course is genuinely life-changing. He doesn\'t just teach you theory — he shows you exactly how to get clients. I earned my first $200 within weeks of completing the course!',
+    text: 'Sir Ismaeel\'s freelancing course is genuinely life-changing. He doesn\'t just teach you theory — he shows you exactly how to get clients. I earned my first $200 within weeks of completing the course!',
     avatar: '👩‍💻',
     achievement: 'Earning $1500/month on Upwork',
   },
@@ -70,7 +70,7 @@ export default function Testimonials() {
             What Our <span className="gradient-text">Students Say</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Real success stories from real students who transformed their careers at MIDT.
+            Real success stories from real students who transformed their careers at RICS.
           </p>
         </AnimatedSection>
 
