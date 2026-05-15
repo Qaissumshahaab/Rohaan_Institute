@@ -32,7 +32,7 @@ function Sidebar({ collapsed, setCollapsed }) {
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 h-16 border-b border-gray-800 flex-shrink-0">
         <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
-          <image src="/imageRohhan.jpg" alt="RICS Logo" className="w-full h-full object-cover rounded-xl" />
+          <img src="/imageRohhan.jpg" alt="RICS Logo" className="w-full h-full object-cover rounded-xl" />
         </div>
         <AnimatePresence>
           {!collapsed && (
