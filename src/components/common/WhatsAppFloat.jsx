@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const WHATSAPP_NUMBER = '923001234567';
+const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER;
 const WHATSAPP_MSG = encodeURIComponent(
-  'Hello! I found MIDT online and I am interested in your courses. Can you help me?'
+  'Hello! I found RICS online and I am interested in your courses. Can you help me?'
 );
 
 export default function WhatsAppFloat() {
