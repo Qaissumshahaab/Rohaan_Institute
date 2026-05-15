@@ -32,12 +32,12 @@ function Sidebar({ collapsed, setCollapsed }) {
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 h-16 border-b border-gray-800 flex-shrink-0">
         <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center flex-shrink-0">
-          <span className="text-white font-bold text-xs font-mono">MI</span>
+          <image src="/imageRohhan.jpg" alt="RICS Logo" className="w-full h-full object-cover rounded-xl" />
         </div>
         <AnimatePresence>
           {!collapsed && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.15 }}>
-              <div className="text-white font-bold text-xs leading-tight" style={{ fontFamily: 'Syne, sans-serif' }}>MIDT</div>
+              <div className="text-white font-bold text-xs leading-tight" style={{ fontFamily: 'Syne, sans-serif' }}>RICS</div>
               <div className="text-blue-400 text-xs">Admin Panel</div>
             </motion.div>
           )}
