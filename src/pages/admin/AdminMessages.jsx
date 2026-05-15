@@ -53,7 +53,7 @@ export default function AdminMessages() {
 
   return (
     <>
-      <Helmet><title>Messages | MIDT Admin</title></Helmet>
+      <Helmet><title>Messages | RICS Admin</title></Helmet>
 
       {/* Stats */}
       <div className="grid grid-cols-3 gap-4 mb-6">

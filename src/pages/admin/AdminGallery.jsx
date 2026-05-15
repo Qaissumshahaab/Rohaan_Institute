@@ -63,7 +63,7 @@ export default function AdminGallery() {
 
   return (
     <>
-      <Helmet><title>Gallery | MIDT Admin</title></Helmet>
+      <Helmet><title>Gallery | RICS Admin</title></Helmet>
 
       {/* Summary */}
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">

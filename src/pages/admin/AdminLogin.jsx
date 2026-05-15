@@ -35,7 +35,7 @@ export default function AdminLogin() {
 
   return (
     <>
-      <Helmet><title>Admin Login | MIDT</title></Helmet>
+      <Helmet><title>Admin Login | RICS</title></Helmet>
       <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center p-4 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 pointer-events-none">
@@ -53,7 +53,7 @@ export default function AdminLogin() {
               <span className="text-white font-bold text-xl font-mono">MI</span>
             </div>
             <h1 className="text-2xl font-bold text-white" style={{ fontFamily: 'Syne, sans-serif' }}>Admin Panel</h1>
-            <p className="text-blue-200 text-sm mt-1">Multan Institute of Digital Technology</p>
+            <p className="text-blue-200 text-sm mt-1">Rohaan Institute of Computer Studies</p>
           </div>
 
           {/* Card */}

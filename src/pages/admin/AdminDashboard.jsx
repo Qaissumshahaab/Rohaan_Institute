@@ -51,7 +51,7 @@ export default function AdminDashboard() {
 
   return (
     <>
-      <Helmet><title>Dashboard | MIDT Admin</title></Helmet>
+      <Helmet><title>Dashboard | RICS Admin</title></Helmet>
 
       {/* Welcome */}
       <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function AdminDashboard() {
         <h2 className="text-xl font-bold mb-1" style={{ fontFamily: 'Syne, sans-serif' }}>
           👋 Welcome back, {admin?.name?.split(' ')[0]}!
         </h2>
-        <p className="text-blue-200 text-sm">Here's what's happening at MIDT today.</p>
+        <p className="text-blue-200 text-sm">Here's what's happening at RICS today.</p>
         <div className="mt-3 text-xs text-blue-300 font-medium">
           {new Date().toLocaleDateString('en-PK', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
         </div>
@@ -135,8 +135,8 @@ export default function AdminDashboard() {
           <div className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 rounded-2xl p-5">
             <h4 className="font-bold text-orange-800 mb-3 text-sm">📌 Institute Info</h4>
             <div className="space-y-2 text-xs text-orange-700">
-              <div>📞 +92 300 123 4567</div>
-              <div>✉️ info@midt.edu.pk</div>
+              <div>📞 +92 305 777 7009</div>
+              <div>✉️ info@rics.edu.pk</div>
               <div>📍 Multan, Punjab</div>
               <div>🕐 Mon–Sat: 9 AM – 7 PM</div>
             </div>

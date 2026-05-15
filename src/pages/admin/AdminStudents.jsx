@@ -82,7 +82,7 @@ export default function AdminStudents() {
 
   return (
     <>
-      <Helmet><title>Students | MIDT Admin</title></Helmet>
+      <Helmet><title>Students | RICS Admin</title></Helmet>
 
       {/* Summary cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
@@ -130,7 +130,7 @@ export default function AdminStudents() {
           <div className="p-12 text-center text-gray-400">
             <div className="text-5xl mb-3">👨‍🎓</div>
             <p className="mb-4">No students found</p>
-            <button onClick={openCreate} className="btn-primary text-sm">Register First Student</button>
+            <button onClick={openCreate} className="btn-primary text-sm">Register Student</button>
           </div>
         ) : (
           <div className="overflow-x-auto">

@@ -60,7 +60,7 @@ export default function AdminAdmissions() {
 
   return (
     <>
-      <Helmet><title>Admissions | MIDT Admin</title></Helmet>
+      <Helmet><title>Admissions | RICS Admin</title></Helmet>
 
       {/* Stats */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">

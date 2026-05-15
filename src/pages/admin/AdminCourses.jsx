@@ -74,7 +74,7 @@ export default function AdminCourses() {
 
   return (
     <>
-      <Helmet><title>Courses | MIDT Admin</title></Helmet>
+      <Helmet><title>Courses | RICS Admin</title></Helmet>
 
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <div className="relative flex-1">
